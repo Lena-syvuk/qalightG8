@@ -13,7 +13,7 @@ class Human:
             self.favorite_drink = 'juice'
         print(f'{type(self).__name__}likes drink {self.favorite_drink}')
 
-kate = Human(age=50)
+kate = Human(age=4)
 kate.napiy()
 kate.drink()
 
@@ -31,7 +31,7 @@ class Worker(Human):
             self.favorite_drink = 'whiskey'
         super().drink()
 
-stepan = Worker(salary=20000, age=44)
+stepan = Worker(salary=20, age=47)
 stepan.napiy()
 stepan.drink()
 

@@ -28,12 +28,12 @@ while True:
         print(" Please try again ...")
 print("Great, you entered an number!")
 
+# Task_4
+
 
 class OnlyEventError(Exception):
     def __init__(self, parameter):
         self.parameter = parameter
-
-# Task_4
 
 
 def check_digit(parameter):

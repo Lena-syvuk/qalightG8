@@ -19,8 +19,7 @@ class TestDynamicProperties:
         page = PageDynamicProperties(driver=chrome)
         page.open()
         button = page.button_change_color()
-        changed_color_button = WebDriverWait(chrome, 10)
-        changed_color_button.until(es.text_to_be_present_in_element_attribute(button, "class","mt-4 text-danger btn btn-primary"))
+        changed_color_button = WebDriverWait(chrome, 10).until(es.text_to_be_present_in_element_attribute(button, "class","mt-4 text-danger btn btn-primary"))
         assert changed_color_button
 
     def test_3(self, chrome):

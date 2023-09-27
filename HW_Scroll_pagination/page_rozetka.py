@@ -13,7 +13,6 @@ class PageRozetkaNotebooks:
     def __init__(self, driver: WebDriver):
         self.driver = driver
         self.goods_card_loc = (By.XPATH, '//li[contains(@class, "catalog-grid__cell")]')
-        self.paginator_loc = (By.XPATH, '//rz-load-more[@class="ng-star-inserted"]')
         self.paginator_page = (By.XPATH, '//ul[starts-with(@class, "pagination")]//a[contains(@href, "notebooks/c80004/page=7/")]')
         self.load_more = (By.XPATH, '//a[@class="show-more show-more--horizontal"]')
 
